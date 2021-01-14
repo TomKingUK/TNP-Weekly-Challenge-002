@@ -16,11 +16,11 @@ def test_decode_message():
         assert message == 'python is fun!', "decode_message(['.--.', '-.--', '-', '....', '---', '-.', '/', '..', '...', '/', '..-.', '..-', '-.', '-.-.--']) /
         ... Expected 'python is fun!', got {}".format(message)
         success()
-        
-        send_msg("Kudos 🌟", "Did you know that you could use the sum function? Try it!")
+        send_msg('🌟 Decoded message:', message)
 
     except AssertionError as e:
         fail()
+        send_msg('Result:', message)
         send_msg("Oops, something's not right! 🐞", e)
         send_msg("Hint 💡", "Did you rememeber to include spaces and punctuation? 🤔")
 
