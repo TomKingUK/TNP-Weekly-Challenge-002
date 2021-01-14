@@ -13,7 +13,7 @@ def fail():
 def test_decode_message():
     try:
         message = decode_message(['.--.', '-.--', '-', '....', '---', '-.', '/', '..', '...', '/', '..-.', '..-', '-.', '-.-.--'])
-        assert message == 'python is fun!', f'Incorrect answer:\n\n{message}.'
+        assert message == 'python is fun!', f'Incorrect answer.'
         success()
         send_msg('🌟 Congratulations, you decoded the message:', f'Message: {message}')
 
