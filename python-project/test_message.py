@@ -26,4 +26,4 @@ def test_decode_message():
 
 
 if __name__ == "__main__":
-    test_count_all_stars()
+    test_decode_message()
